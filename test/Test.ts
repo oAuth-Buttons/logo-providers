@@ -1,7 +1,5 @@
 import { LocalLogoProvider } from '../src/DefaultLogoProviders';
-import { Logo } from '../src/Logo';
-import { ThemeColorStorage } from '../src/ThemeColorStorage';
-import { Color } from 'csstype';
+import { Logo, ThemeColorStorage } from '../src/LogoProviders';
 
 import { expect } from 'chai';
 
