@@ -1,5 +1,4 @@
-import { LogoProvider } from './LogoProvider';
-import { Logo } from './Logo';
+import { LogoProvider, Logo } from './LogoProviders';
 
 export class LocalLogoProvider implements LogoProvider {
     name: 'LocalLogoProvider';
@@ -13,7 +12,7 @@ export class LocalLogoProvider implements LogoProvider {
         for (let file of this.fileList) {
             let dot = file.lastIndexOf('.');
             let name = file;
-            if(dot !== -1) {
+            if (dot !== -1) {
                 name = name.substring(0, dot);
             }
             if (name.endsWith(id)) {

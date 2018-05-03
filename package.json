@@ -2,7 +2,7 @@
   "name": "logo-providers",
   "version": "0.1.0-SNAPSHOT",
   "description": "A simple logo provider facade",
-  "main": "index.js",
+  "main": "src/LogoProviders.ts",
   "scripts": {
     "test": "mocha -r ts-node/register test/Test.ts"
   },
