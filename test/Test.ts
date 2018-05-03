@@ -1,4 +1,4 @@
-import { LocalLogoProvider } from '../src/LocalLogoProvider';
+import { LocalLogoProvider } from '../src/DefaultLogoProviders';
 import { Logo } from '../src/Logo';
 import { ThemeColorStorage } from '../src/ThemeColorStorage';
 import { Color } from 'csstype';
