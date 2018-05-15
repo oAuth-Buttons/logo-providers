@@ -1,22 +1,15 @@
-import { LocalLogoProvider } from '../src/DefaultLogoProviders';
+import { UrlLogoProvider } from '../src/DefaultLogoProviders';
 import { Logo, ThemeColorStorage } from '../src/LogoProviders';
 
 import { expect } from 'chai';
 
-const logoProvider = new LocalLogoProvider([
+const logoProvider = new UrlLogoProvider([
     '../svg/discord.svg',
     '../svg/facebook.svg',
     '../svg/github.svg',
     '../svg/google.svg',
     '../svg/instagram.svg',
 ]);
-const themeStorage = new ThemeColorStorage({
-    'discord': '#7289DA',
-    'facebook': '#3c5a99',
-    'github': '#1a1414',
-    'google': '#ea4335',
-    'instagram': '#e53c5c'
-});
 
 it('works with logo provider', () => {
     expect(logoProvider.provide('discord').url).to.be.equal('../svg/discord.svg');
@@ -25,7 +18,9 @@ it('works with logo provider', () => {
 });
 
 it('works with theme storage', () => {
-    expect(themeStorage.getColorById('discord')).to.be.equal('#7289DA');
-    expect(themeStorage.getColorById('google')).to.be.equal('#ea4335');
-    expect(themeStorage.getColorById('naver')).to.be.equal(null);
+    expect(ThemeColorStorage.getColorById('discord')).to.be.equal('#7289da');
+    expect(ThemeColorStorage.getColorById('google')).to.be.equal('#ea4335');
+    expect(ThemeColorStorage.getColorById('unset')).to.be.equal(null);
+    ThemeColorStorage.extend('test', '#6699ff');
+    expect(ThemeColorStorage.getColorById('test')).to.be.equal('#6699ff');
 });
