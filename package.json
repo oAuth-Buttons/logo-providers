@@ -1,13 +1,25 @@
 {
   "name": "logo-providers",
-  "version": "0.1.0-SNAPSHOT",
+  "version": "0.1.0",
   "description": "A simple logo provider facade",
-  "main": "index.js",
+  "main": "src/LogoProviders.ts",
   "scripts": {
     "test": "mocha -r ts-node/register test/Test.ts"
   },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/oAuth-Buttons/logo-providers.git"
+  },
+  "bugs": {
+    "url": "http://github.com/oAuth-Buttons/logo-providers/issues"
+  },
   "author": "RanolP <asdhugh1@gmail.com>",
-  "license": "MIT",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://www.opensource.org/licenses/MIT"
+    }
+  ],
   "dependencies": {
     "@types/chai": "^4.1.3",
     "@types/mocha": "^5.2.0",
