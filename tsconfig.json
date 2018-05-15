@@ -4,15 +4,19 @@
         "sourceMap": true,
         "noImplicitAny": false,
         "module": "commonjs",
-        "target": "es2018",
+        "target": "es5",
         "jsx": "react",
         "rootDir": "src",
-        "allowJs": true,
         "lib": [
             "es2018"
-        ]
+        ],
+        "declaration": true
     },
     "include": [
         "./src/**/*"
+    ],
+    "exclude": [
+        "node_modules",
+        "dist"
     ]
 }
