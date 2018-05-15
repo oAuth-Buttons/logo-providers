@@ -6,10 +6,10 @@ import * as Path from 'path';
 
 it('works with logo provider', () => {
     let discord = Path.normalize(DefaultLogoProvider.provide('discord').url);
-    expect(discord).to.be.equal(Path.resolve(__dirname, '../src/svg/discord.svg'));
+    expect(discord).to.be.equal(Path.resolve(__dirname, '../svg/discord.svg'));
 
     let google = Path.normalize(DefaultLogoProvider.provide('google').url);
-    expect(google).to.be.equal(Path.resolve(__dirname, '../src/svg/google.svg'));
+    expect(google).to.be.equal(Path.resolve(__dirname, '../svg/google.svg'));
 
     expect(DefaultLogoProvider.provide('unset')).to.be.equal(null);
 });

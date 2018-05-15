@@ -25,20 +25,20 @@ export class UrlLogoProvider implements LogoProvider {
 
 export const DefaultLogoProvider = new UrlLogoProvider(
     [
-        __dirname + '/svg/discord.svg',
-        __dirname + '/svg/facebook.svg',
-        __dirname + '/svg/github.svg',
-        __dirname + '/svg/google.svg',
-        __dirname + '/svg/instagram.svg',
-        __dirname + '/svg/kakao.svg',
-        __dirname + '/svg/linkedin.svg',
-        __dirname + '/svg/naver.svg',
-        __dirname + '/svg/pinterest.svg',
-        __dirname + '/svg/slack.svg',
-        __dirname + '/svg/steam.svg',
-        __dirname + '/svg/telegram.svg',
-        __dirname + '/svg/twitch.svg',
-        __dirname + '/svg/twitter.svg',
-        __dirname + '/svg/wordpress.svg'
+        __dirname + '/../svg/discord.svg',
+        __dirname + '/../svg/facebook.svg',
+        __dirname + '/../svg/github.svg',
+        __dirname + '/../svg/google.svg',
+        __dirname + '/../svg/instagram.svg',
+        __dirname + '/../svg/kakao.svg',
+        __dirname + '/../svg/linkedin.svg',
+        __dirname + '/../svg/naver.svg',
+        __dirname + '/../svg/pinterest.svg',
+        __dirname + '/../svg/slack.svg',
+        __dirname + '/../svg/steam.svg',
+        __dirname + '/../svg/telegram.svg',
+        __dirname + '/../svg/twitch.svg',
+        __dirname + '/../svg/twitter.svg',
+        __dirname + '/../svg/wordpress.svg'
     ]
 );
