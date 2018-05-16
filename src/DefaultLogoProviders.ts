@@ -1,4 +1,5 @@
 import { LogoProvider, Logo } from './LogoProviders';
+import * as path from 'path'
 
 export class UrlLogoProvider implements LogoProvider {
     name: 'LocalLogoProvider';
@@ -25,20 +26,20 @@ export class UrlLogoProvider implements LogoProvider {
 
 export const DefaultLogoProvider = new UrlLogoProvider(
     [
-        __dirname + '/../svg/discord.svg',
-        __dirname + '/../svg/facebook.svg',
-        __dirname + '/../svg/github.svg',
-        __dirname + '/../svg/google.svg',
-        __dirname + '/../svg/instagram.svg',
-        __dirname + '/../svg/kakao.svg',
-        __dirname + '/../svg/linkedin.svg',
-        __dirname + '/../svg/naver.svg',
-        __dirname + '/../svg/pinterest.svg',
-        __dirname + '/../svg/slack.svg',
-        __dirname + '/../svg/steam.svg',
-        __dirname + '/../svg/telegram.svg',
-        __dirname + '/../svg/twitch.svg',
-        __dirname + '/../svg/twitter.svg',
-        __dirname + '/../svg/wordpress.svg'
+        path.resolve('/../svg/discord.svg'),
+        path.resolve('/../svg/facebook.svg'),
+        path.resolve('/../svg/github.svg'),
+        path.resolve('/../svg/google.svg'),
+        path.resolve('/../svg/instagram.svg'),
+        path.resolve('/../svg/kakao.svg'),
+        path.resolve('/../svg/linkedin.svg'),
+        path.resolve('/../svg/naver.svg'),
+        path.resolve('/../svg/pinterest.svg'),
+        path.resolve('/../svg/slack.svg'),
+        path.resolve('/../svg/steam.svg'),
+        path.resolve('/../svg/telegram.svg'),
+        path.resolve('/../svg/twitch.svg'),
+        path.resolve('/../svg/twitter.svg'),
+        path.resolve('/../svg/wordpress.svg'),
     ]
 );

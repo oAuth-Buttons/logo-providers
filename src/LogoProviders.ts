@@ -44,3 +44,32 @@ export const ThemeColorStorage = {
         return this.colorMap[id] || null;
     }
 };
+
+export const SubThemeColorStorage = {
+    // private value
+    colorMap: {
+        'discord': '#8392c7',
+        'facebook': '#516184',
+        'github': '#181516',
+        'google': '#d3554a',
+        'instagram': '#ce536a',
+        'kakao': '#e5d419',
+        'linkedin': '#116ea0',
+        'naver': '#29a011',
+        'pinterest': '#ab1b2c',
+        'slack': '#89c2af',
+        'steam': '#212121',
+        'telegram': '#4da5cb',
+        'twitch': '#6a588d',
+        'twitter': '#349ad9',
+        'wordpress': '#564432'
+    },
+
+    extend(id: string, color: Color): void {
+        this.colorMap[id] = color;
+    },
+
+    getColorById(id: string): Color | null {
+        return this.colorMap[id] || null;
+    }
+};
